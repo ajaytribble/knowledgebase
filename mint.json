@@ -33,14 +33,6 @@
     {
       "name": "Web App",
       "url": "web-app"
-    },
-    {
-      "name": "Admin",
-      "url": "admin"
-    },
-    {
-      "name": "Integrations",
-      "url": "integrations"
     }
   ],
   "anchors": [
@@ -60,37 +52,7 @@
       "icon": "browser",
       "url": "web-app",
       "pages": [
-        "web-app/getting-started",
-        "web-app/dashboard-overview",
         "web-app/creating-projects"
-      ]
-    },
-    {
-      "name": "Admin",
-      "icon": "shield-check",
-      "url": "admin",
-      "pages": [
-        "admin/source-management",
-        "admin/uploading-files",
-        "admin/user-permissions",
-        "admin/scim-okta"
-      ]
-    },
-    {
-      "name": "Integrations",
-      "icon": "plug",
-      "url": "integrations",
-      "pages": [
-        "integrations/overview",
-        "integrations/box",
-        "integrations/confluence",
-        "integrations/google-drive",
-        "integrations/highspot",
-        "integrations/notion",
-        "integrations/salesforce",
-        "integrations/sharepoint",
-        "integrations/slack",
-        "integrations/zendesk"
       ]
     }
   ],
@@ -107,33 +69,7 @@
     {
       "group": "Web App",
       "pages": [
-        "web-app/getting-started",
-        "web-app/dashboard-overview",
         "web-app/creating-projects"
-      ]
-    },
-    {
-      "group": "Admin",
-      "pages": [
-        "admin/source-management",
-        "admin/uploading-files",
-        "admin/user-permissions",
-        "admin/scim-okta"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "pages": [
-        "integrations/overview",
-        "integrations/box",
-        "integrations/confluence",
-        "integrations/google-drive",
-        "integrations/highspot",
-        "integrations/notion",
-        "integrations/salesforce",
-        "integrations/sharepoint",
-        "integrations/slack",
-        "integrations/zendesk"
       ]
     }
   ],
