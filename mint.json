@@ -25,17 +25,43 @@
     "name": "Dashboard",
     "url": "https://app.tribble.com"
   },
-  "tabs": [
+  "anchors": [
     {
-      "name": "Browser Extension",
-      "url": "browser-extension"
+      "name": "Admin",
+      "icon": "shield-check",
+      "url": "admin",
+      "pages": [
+        "admin/source-management",
+        "admin/uploading-files",
+        "admin/user-permissions",
+        "admin/scim-okta"
+      ]
+    },
+    {
+      "name": "Integrations",
+      "icon": "plug",
+      "url": "integrations",
+      "pages": [
+        "integrations/overview",
+        "integrations/box",
+        "integrations/confluence",
+        "integrations/google-drive",
+        "integrations/highspot",
+        "integrations/notion",
+        "integrations/salesforce",
+        "integrations/sharepoint",
+        "integrations/slack",
+        "integrations/zendesk"
+      ]
     },
     {
       "name": "Web App",
-      "url": "web-app"
-    }
-  ],
-  "anchors": [
+      "icon": "browser",
+      "url": "web-app",
+      "pages": [
+        "web-app/creating-projects"
+      ]
+    },
     {
       "name": "Browser Extension",
       "icon": "puzzle-piece",
@@ -46,17 +72,39 @@
         "browser-extension/project-creation",
         "browser-extension/question-management"
       ]
-    },
-    {
-      "name": "Web App",
-      "icon": "browser",
-      "url": "web-app",
-      "pages": [
-        "web-app/creating-projects"
-      ]
     }
   ],
   "navigation": [
+    {
+      "group": "Admin",
+      "pages": [
+        "admin/source-management",
+        "admin/uploading-files",
+        "admin/user-permissions",
+        "admin/scim-okta"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/overview",
+        "integrations/box",
+        "integrations/confluence",
+        "integrations/google-drive",
+        "integrations/highspot",
+        "integrations/notion",
+        "integrations/salesforce",
+        "integrations/sharepoint",
+        "integrations/slack",
+        "integrations/zendesk"
+      ]
+    },
+    {
+      "group": "Web App",
+      "pages": [
+        "web-app/creating-projects"
+      ]
+    },
     {
       "group": "Browser Extension",
       "pages": [
@@ -64,12 +112,6 @@
         "browser-extension/main-interface",
         "browser-extension/project-creation",
         "browser-extension/question-management"
-      ]
-    },
-    {
-      "group": "Web App",
-      "pages": [
-        "web-app/creating-projects"
       ]
     }
   ],
