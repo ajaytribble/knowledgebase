@@ -1,91 +1,152 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Tribble",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logodarktheme.svg",
+    "light": "/logo/logolighttheme.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#3263E9",
+    "light": "#3263E9",
+    "dark": "#3263E9",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#3263E9",
+      "to": "#45AAF2"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@tribble.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.tribble.com"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Documentation",
+      "url": "documentation"
+    },
+    {
+      "name": "Browser Extension",
+      "url": "browser-extension"
+    },
+    {
+      "name": "Web App",
+      "url": "web-app"
+    },
+    {
+      "name": "Admin",
+      "url": "admin"
+    },
+    {
+      "name": "Integrations",
+      "url": "integrations"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Browser Extension",
+      "icon": "puzzle-piece",
+      "url": "browser-extension",
+      "pages": [
+        "browser-extension/getting-started",
+        "browser-extension/main-interface",
+        "browser-extension/project-creation",
+        "browser-extension/question-management",
+        "browser-extension/response-review",
+        "browser-extension/exporting-responses"
+      ]
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Web App",
+      "icon": "browser",
+      "url": "web-app",
+      "pages": [
+        "web-app/getting-started",
+        "web-app/dashboard-overview",
+        "web-app/creating-projects"
+      ]
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Admin",
+      "icon": "shield-check",
+      "url": "admin",
+      "pages": [
+        "admin/source-management",
+        "admin/uploading-files",
+        "admin/user-permissions",
+        "admin/scim-okta"
+      ]
+    },
+    {
+      "name": "Integrations",
+      "icon": "plug",
+      "url": "integrations",
+      "pages": [
+        "integrations/overview",
+        "integrations/box",
+        "integrations/confluence",
+        "integrations/google-drive",
+        "integrations/highspot",
+        "integrations/notion",
+        "integrations/salesforce",
+        "integrations/sharepoint",
+        "integrations/slack",
+        "integrations/zendesk"
+      ]
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Browser Extension",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "browser-extension/getting-started",
+        "browser-extension/main-interface",
+        "browser-extension/project-creation",
+        "browser-extension/question-management",
+        "browser-extension/response-review",
+        "browser-extension/exporting-responses"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Web App",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "web-app/getting-started",
+        "web-app/dashboard-overview",
+        "web-app/creating-projects"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Admin",
       "pages": [
-        "api-reference/introduction"
+        "admin/source-management",
+        "admin/uploading-files",
+        "admin/user-permissions",
+        "admin/scim-okta"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Integrations",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "integrations/overview",
+        "integrations/box",
+        "integrations/confluence",
+        "integrations/google-drive",
+        "integrations/highspot",
+        "integrations/notion",
+        "integrations/salesforce",
+        "integrations/sharepoint",
+        "integrations/slack",
+        "integrations/zendesk"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "twitter": "https://x.com/Tribble_ai",
+    "linkedin": "https://ca.linkedin.com/company/tribbleai"
   }
 }
