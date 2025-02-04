@@ -27,10 +27,6 @@
   },
   "tabs": [
     {
-      "name": "Documentation",
-      "url": "documentation"
-    },
-    {
       "name": "Browser Extension",
       "url": "browser-extension"
     },
@@ -56,9 +52,7 @@
         "browser-extension/getting-started",
         "browser-extension/main-interface",
         "browser-extension/project-creation",
-        "browser-extension/question-management",
-        "browser-extension/response-review",
-        "browser-extension/exporting-responses"
+        "browser-extension/question-management"
       ]
     },
     {
@@ -107,9 +101,7 @@
         "browser-extension/getting-started",
         "browser-extension/main-interface",
         "browser-extension/project-creation",
-        "browser-extension/question-management",
-        "browser-extension/response-review",
-        "browser-extension/exporting-responses"
+        "browser-extension/question-management"
       ]
     },
     {
