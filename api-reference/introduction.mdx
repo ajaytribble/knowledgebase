@@ -1,33 +1,49 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'API Reference'
+description: 'Introduction to the Tribble API'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Overview
 
-## Welcome
-
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
-
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+The Tribble API allows you to programmatically access and manage your Tribble data. This reference provides detailed information about the available endpoints and how to use them.
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API endpoints require authentication. You can obtain an API key from your Tribble dashboard under Settings > API Keys.
+
+To authenticate your requests, include your API key in the Authorization header:
+
+```bash
+Authorization: Bearer YOUR_API_KEY
+```
+
+## Base URL
+
+All API requests should be made to:
+
+```
+https://api.tribble.com/v1
+```
+
+## Rate Limiting
+
+The API is rate limited to:
+- 100 requests per minute for free accounts
+- 1000 requests per minute for paid accounts
+
+## Response Format
+
+All responses are returned in JSON format and include a standard structure:
 
 ```json
-"security": [
-  {
-    "bearerAuth": []
+{
+  "success": true,
+  "data": {
+    // Response data here
+  },
+  "meta": {
+    "requestId": "req_123",
+    "timestamp": "2024-02-04T12:00:00Z"
   }
-]
+}
 ```
