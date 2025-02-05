@@ -1,0 +1,82 @@
+---
+title: 'Slack'
+description: 'Guide for setting up and configuring the Slack integration for Tribble, including the Loop in an Expert feature and content ingestion'
+---
+
+This guide walks you through setting up and configuring the Slack integration for Tribble, including the Loop in an Expert feature and content ingestion.
+
+## Initial Setup
+
+1. Navigate to Sources → Integrations tab in the Tribble Admin Console
+2. Click "Add Integration"
+3. Select Slack from the available integrations
+
+## Installing the Tribble Slack App
+
+1. **Start Installation**  
+   * Click "Install" on the Slack integration card  
+   * You'll be redirected to Slack's authorization page  
+
+2. **Workspace Selection**  
+   * Select your company's Slack workspace  
+   * Click "Allow" to grant permissions  
+
+3. **Confirmation**  
+   * Once installed, navigate to Sources --> Integrations where the Slack card will display an "Open" button  
+   * Click "Open" to begin configuration  
+
+## Configuring the Integration
+
+### Private Channel Access
+
+* Choose whether Tribble can be added to private channels
+* This setting affects both SME communication and content ingestion features
+
+### SME Channels
+
+* Designate channels for receiving "Loop in an Expert" requests from the browser extension
+* For Example:  
+   * legal-help  
+   * security-help  
+   * RFX-specific channels  
+   * Security questionnaire channels
+
+## Setting Up Content Ingestion
+
+Configure Slack channels as content sources for Tribble's brain.
+
+1. **Channel Selection**  
+   * Click "Setup Ingestion"  
+   * Choose channels to ingest (help channels, support channels, enablement channels, etc.)  
+   * Toggle option available for private channel ingestion
+
+2. **Private Channel Considerations:**  
+   * Private channels must have the Tribble app added to them for ingestion  
+   * Any Tribble user can potentially see ingested private channel content  
+   * Consider carefully which private channels to ingest
+
+3. **Ingestion Settings**  
+   * Set the look-back period (start date for message ingestion)  
+   * Configure ingestion frequency
+
+Upon adding channels for Tribble to monitor, the Tribble app will notify each channel with a message making channel members aware that the contents of the channel will be used to help Tribble generate answers in Slack. You can turn this notification off by toggling on "Suppress ingestion announcement."
+
+## Disconnecting the Slack Integration
+
+To disconnect Slack from Tribble:
+
+1. Navigate to the Slack integration configuration screen
+2. Click on the "Disconnect" button
+
+## Important Privacy Considerations
+
+1. **Private Channel Access**  
+   * Consider the visibility implications for private channel content
+
+2. **Content Visibility**  
+   * All ingested content becomes accessible to Tribble users  
+   * Carefully review channels before ingestion
+
+3. **SME Communication**  
+   * Select appropriate channels for the Loop in an Expert feature  
+   * Ensure designated channels align with your team's workflow 

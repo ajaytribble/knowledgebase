@@ -1,27 +1,102 @@
 ---
 title: 'Project Creation'
-description: 'Learn how to create and manage projects in Tribble'
+description: 'Learn how to create and manage projects in the Tribble browser extension'
 ---
 
 ## Creating a New Project
 
-### From the Extension
+When creating a new project in the Tribble browser extension, you have two options:
 
-1. Click the Tribble icon in your toolbar
-2. Select "New Project" from the project selector
-3. Enter your project details:
-   - Project name
-   - Description (optional)
-   - Team members (optional)
-4. Click "Create Project"
+1. **Uploading an Entire Questionnaire**: Ideal for complete questionnaires in supported formats (DOCX, PDF, or XLSX). Best for standardized forms or well-structured documents.
+2. **Manual Question Entry**: Perfect for online portals, unsupported formats, or complex spreadsheets. Allows manual input or copy-paste from various sources.
 
-### Project Templates
+## Option 1: Uploading an Entire Questionnaire
 
-You can start with a template to speed up project creation:
-- Blank Project
-- Research Project
-- Documentation Project
-- Team Collaboration
+1. **Start New Project**  
+   * Click "Create Project" button  
+   * Select "Upload Questionnaire"
+
+2. **Upload File**  
+   * Supported file types: DOCX, PDF, XLSX  
+
+3. **Enter Project Details**  
+   * Project title  
+   * Customer name  
+   * Salesforce opportunity (if connected to Salesforce)  
+   * Due date  
+   * Project owner  
+
+4. **Select Tags (Optional)**  
+   * Select relevant tags (product, region, etc.)  
+   * Tags help confine Tribble's responses to relevant content
+
+5. **Configure Verbosity Settings**  
+   * Set answer length:  
+      * Default: ~100 words  
+      * Shorter: ~50 words  
+      * Longer: ~150 words  
+   * Enable "Terse yes or no answers" option for simple responses
+
+6. **Confirm and Process**  
+   * Review details and click "Create Project"
+
+7. **Tribble Analysis**  
+   After clicking "Create Project", Tribble begins analysis:
+
+   ### For spreadsheet-style questionnaires:
+   1. Extracts all questions
+   2. Generates responses
+
+   ### For long-form proposal responses:
+   1. Analyzes the document
+   2. Evaluates against "Go/No-Go" criteria (if set up)
+      * Provides feedback based on criteria
+      * Allows proceeding if RFx matches business needs
+   3. Generates proposal response
+
+## Option 2: Manual Question Input
+
+Ideal for:
+* Portal-based questionnaires
+* Unsupported file formats
+* Complex file formats
+* Function-based grouping (Legal, Security, Product, etc.)
+
+Process:
+1. Follow steps from Option 1, skipping file upload
+2. Use "Add Questions" button to manually input or copy-paste questions
+
+<Note>
+Teams can filter by "groupings" to focus on their specific responsibilities.
+</Note>
+
+## Notifications
+
+Tribble sends notifications through your preferred channel (Slack, Teams, or Email) when:
+* Questionnaire completion is finished
+* Proposal response is generated
+* Other significant project updates occur
+
+## Best Practices
+
+<Tip>
+### File Upload Tips
+* Use file upload for standardized forms
+* Choose manual entry for portal-style questionnaires
+* Copy-paste questions from various sources for manual entry
+</Tip>
+
+### Project Setup
+* Connect to Salesforce to link projects with opportunities
+* Use "Terse yes or no answers" for security questionnaires
+* Select answer length based on required detail level
+* Use tags to ensure relevant knowledge base access
+
+### Organization
+* Group questions by function when using manual entry
+* Maintain consistent naming conventions
+* Set realistic due dates
+* Assign clear ownership
 
 ## Managing Projects
 

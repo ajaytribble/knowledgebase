@@ -1,0 +1,121 @@
+---
+title: 'Box'
+description: 'Guide for setting up the Box integration and managing Box content in Tribble'
+---
+
+This guide walks you through setting up the Box integration and managing your Box content in Tribble.
+
+## Initial Setup
+
+1. Navigate to Sources → Integrations tab
+2. Click "Add More Integrations"
+3. Select Box
+4. Click "Next"
+5. Click "Connect to Box"
+6. Log in to your Box account and grant permissions to Tribble
+
+Once connected, you can ingest your Box folders and files within Tribble in the Integrations tab:
+
+## Ingesting Content from Box
+
+1. **Select a file for ingest**
+2. **Ingestion Options**  
+   1. Choose data type and preference for ingest:  
+         * One-time ingestion  
+         * Watch file (automatically sync any file edits from within Box to Tribble)
+3. **Configure Files**  
+   1. For spreadsheets, head over to the Review Tab on the left hand panel and configure your files underneath the "Box" integration tab
+
+## File Configuration Process
+
+1. Navigate to Brain → Review tab
+2. Find files under the Box integration section
+3. Configure files as per **our guide here**
+
+## Overview
+
+The Box integration allows you to:
+- Access documents stored in Box
+- Keep content synchronized
+- Maintain Box's security permissions
+- Search Box content through Tribble
+
+## Prerequisites
+
+Before setting up the integration, ensure you have:
+- Admin access to your Box enterprise account
+- Admin access to Tribble
+- Necessary Box API credentials
+
+## Setup Steps
+
+### In Box
+
+1. Log in to your Box Admin Console
+2. Navigate to the Developer Console
+3. Create a new Custom App
+4. Configure OAuth 2.0 settings:
+   - Set redirect URL to your Tribble instance
+   - Enable necessary scopes (read, write)
+5. Copy the Client ID and Client Secret
+
+### In Tribble
+
+1. Go to Settings > Integrations
+2. Select "Box"
+3. Click "Configure"
+4. Enter your Box credentials:
+   - Client ID
+   - Client Secret
+5. Click "Authorize"
+6. Follow the Box authentication flow
+
+## Configuration Options
+
+### Content Sync
+- Choose folders to sync
+- Set sync frequency
+- Configure file type filters
+
+### Permissions
+- Map Box roles to Tribble permissions
+- Set default access levels
+- Configure user authentication
+
+## Using Box Content
+
+### Accessing Files
+1. Navigate to Sources
+2. Filter by "Box"
+3. Browse or search for content
+
+### Managing Content
+- View Box files directly in Tribble
+- Use content in responses
+- Track usage analytics
+
+<Note>
+Changes made in Box will sync to Tribble based on your sync settings.
+</Note>
+
+## Troubleshooting
+
+### Common Issues
+
+#### Connection Failed
+- Verify API credentials
+- Check network connectivity
+- Confirm OAuth configuration
+
+#### Sync Issues
+- Check folder permissions
+- Verify sync settings
+- Review Box API limits
+
+## Best Practices
+
+- Regularly audit synced folders
+- Monitor API usage
+- Keep credentials secure
+- Document custom configurations
+- Test sync settings periodically 

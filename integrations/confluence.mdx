@@ -1,0 +1,129 @@
+---
+title: 'Confluence'
+description: 'Guide for setting up and managing the Confluence integration in Tribble'
+---
+
+This article guides you through setting up and managing the Confluence integration in Tribble.
+
+## Initial Setup
+
+1. Navigate to the Sources section in Tribble Admin Console
+2. Click on the "Integrations" tab
+3. Click "Add More Integrations"
+4. Select "Confluence"
+
+## Authentication Configuration
+
+Input the following details for your integration user:
+
+* Email address
+* Confluence domain
+* API token
+
+## Managing Confluence Content
+
+Once connected, you can:
+
+1. **Search for Pages**  
+   * Use the search functionality to find specific Confluence pages  
+   * Select individual pages for ingestion into Tribble's brain
+2. **Configure Page Options**  
+   * Choose whether to include sub-pages  
+   * This option allows you to ingest entire page hierarchies if needed
+3. **Set Update Frequency**  
+   * Manage how often Tribble checks for updates to ingested pages  
+   * Ensures your knowledge base stays current with Confluence content  
+   * Choose a frequency that matches your team's update patterns
+
+## Overview
+
+The Confluence integration enables you to:
+- Access Confluence spaces and pages
+- Keep documentation in sync
+- Maintain Confluence permissions
+- Search Confluence content through Tribble
+
+## Prerequisites
+
+Before setting up the integration, ensure you have:
+- Admin access to your Confluence instance
+- Admin access to Tribble
+- Confluence API tokens or credentials
+
+## Setup Steps
+
+### In Confluence
+
+1. Log in to your Confluence Admin dashboard
+2. Navigate to Settings > Apps
+3. Generate an API token
+4. Note your Confluence instance URL
+5. Identify spaces to connect
+
+### In Tribble
+
+1. Go to Settings > Integrations
+2. Select "Confluence"
+3. Click "Configure"
+4. Enter your Confluence details:
+   - Instance URL
+   - API token
+   - Space keys (optional)
+5. Click "Connect"
+6. Verify the connection
+
+## Configuration Options
+
+### Space Selection
+- Choose specific spaces to sync
+- Set sync frequency
+- Configure page filters
+
+### Permission Mapping
+- Map Confluence roles to Tribble permissions
+- Set default access levels
+- Configure user authentication
+
+## Using Confluence Content
+
+### Accessing Pages
+1. Navigate to Sources
+2. Filter by "Confluence"
+3. Browse spaces and pages
+
+### Content Management
+- View Confluence pages in Tribble
+- Use content in responses
+- Track usage and analytics
+
+<Note>
+Changes made in Confluence will sync to Tribble based on your sync settings.
+</Note>
+
+## Troubleshooting
+
+### Common Issues
+
+#### Connection Failed
+- Verify API token
+- Check instance URL
+- Confirm network access
+
+#### Sync Issues
+- Check space permissions
+- Verify page restrictions
+- Review API rate limits
+
+#### Content Not Appearing
+- Confirm space selection
+- Check page restrictions
+- Verify sync status
+
+## Best Practices
+
+- Regularly review connected spaces
+- Monitor API usage
+- Keep credentials secure
+- Document space configurations
+- Test sync settings periodically
+- Update API tokens as needed 

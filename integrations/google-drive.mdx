@@ -1,0 +1,75 @@
+---
+title: 'Google Drive'
+description: 'Guide for setting up and using the Google Drive integration in Tribble'
+---
+
+This article guides you through setting up and using the Google Drive integration in Tribble.
+
+## Initial Setup
+
+1. Navigate to the Sources section in Tribble Admin Console
+2. Click on the "Integrations" tab
+3. Click "Add More Integrations"
+4. Select "Google Drive"
+
+## Authentication Process
+
+1. **Sign In with Google**  
+   * Click the "Sign in with Google" button  
+   * Select the appropriate Google account  
+   * Click "Continue"  
+
+2. **Permission Consent**  
+   1. **Important Note About Permissions:** While Google Drive requests permission to "see and download all your Google Drive files," Tribble will ONLY access and ingest files that you explicitly select later. This permission:  
+         * Does NOT mean Tribble automatically ingests all files  
+         * Only allows Tribble to see file names until you specifically choose files to ingest  
+         * Gives you complete control over which files are added to Tribble  
+
+3. **Accept Permissions**  
+   * Review the permissions  
+   * Click "Allow" to complete the connection
+
+## Selecting Content to Sync
+
+After connecting, open the Google Drive integration from the Integrations tab in Sources. You can sync content at three levels:
+
+1. **Entire Drives**
+2. **Folders**  
+   * Select specific folders to sync  
+   * All contents within selected folders will be synced
+3. **Individual Files**  
+   * Choose specific files to sync  
+   * Most precise control over synced content
+
+## File Configuration
+
+For certain file types (i.e. CSV, XLSX), additional setup is required during ingestion. You have two ways to configure these files:
+
+### Option 1: Configure During Ingestion
+
+* When selecting files in Sources → Integrations → Google Drive
+* Configure files immediately as part of the ingestion process
+* Follow the file-specific setup instructions as outlined in📄 Uploading Files to Tribble
+
+### Option 2: Configure from Review Section
+
+1. You'll receive a notification for files that need configuration
+2. Navigate to Brain → Review in the left sidebar
+3. Find files awaiting configuration
+4. Click to configure directly from this screen
+
+## Viewing Synced Files
+
+To view your ingested Google Drive files:
+
+1. Go to the Sources section
+2. Navigate to the Documents tab
+3. Look for files with the Google Drive icon
+4. Use the filter bar to specifically view Google Drive files
+
+## Best Practices
+
+1. Start with syncing individual files or specific folders before syncing entire Drives
+2. Regularly review synced content to ensure relevance
+3. Use the filter option in Sources to easily manage Google Drive content
+4. Configure spreadsheet files carefully during ingestion for optimal results 

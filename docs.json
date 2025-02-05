@@ -1,0 +1,115 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Tribble",
+  "colors": {
+    "primary": "#3263E9",
+    "light": "#3263E9",
+    "dark": "#1F4CC7"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Getting Started",
+        "icon": "rocket",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "Admin",
+        "icon": "shield-check",
+        "groups": [
+          {
+            "group": "Admin",
+            "pages": [
+              "admin/overview",
+              "admin/integrations",
+              "admin/source-management",
+              "admin/uploading-files",
+              "admin/permission-settings",
+              "admin/scim-okta"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "Integrations",
+        "icon": "plug",
+        "groups": [
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/box",
+              "integrations/confluence",
+              "integrations/google-drive",
+              "integrations/highspot",
+              "integrations/notion",
+              "integrations/salesforce",
+              "integrations/sharepoint",
+              "integrations/slack",
+              "integrations/zendesk"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "Web App",
+        "icon": "browser",
+        "groups": [
+          {
+            "group": "Web App",
+            "pages": [
+              "web-app/creating-projects"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "Browser Extension",
+        "icon": "puzzle-piece",
+        "groups": [
+          {
+            "group": "Browser Extension",
+            "pages": [
+              "browser-extension/getting-started",
+              "browser-extension/main-interface",
+              "browser-extension/project-creation",
+              "browser-extension/question-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/logolighttheme.svg",
+    "dark": "/logo/logodarktheme.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@tribble.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.tribble.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "twitter": "https://x.com/Tribble_ai",
+      "linkedin": "https://ca.linkedin.com/company/tribbleai"
+    }
+  }
+}

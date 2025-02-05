@@ -1,0 +1,88 @@
+---
+title: 'SCIM Setup with Okta'
+description: 'Configure SCIM user provisioning with Okta'
+---
+
+This guide walks you through setting up SCIM (System for Cross-domain Identity Management) with Okta for automated user provisioning in Tribble.
+
+## Prerequisites
+
+Before you begin, ensure you have:
+- Admin access to your Okta account
+- Admin access to Tribble
+- Your Tribble SCIM endpoint URL
+- Your Tribble SCIM API token
+
+## Setup Steps
+
+### In Tribble
+1. Navigate to Settings > Integrations
+2. Select "SCIM Configuration"
+3. Generate a SCIM API token
+4. Copy the SCIM endpoint URL
+
+### In Okta
+
+1. Log in to your Okta admin console
+2. Navigate to Applications > Applications
+3. Click "Add Application"
+4. Search for "Tribble" or select "Create SAML Integration"
+5. Configure the application settings:
+   - Application name: "Tribble"
+   - SCIM connector base URL: Your Tribble SCIM endpoint
+   - Unique identifier field for users: "email"
+   - Supported provisioning actions: 
+     - Import New Users and Profile Updates
+     - Push New Users
+     - Push Profile Updates
+     - Push User Deactivation
+
+## Configuration
+
+### Attribute Mapping
+Configure the following attribute mappings in Okta:
+
+| Okta Attribute | Tribble Attribute |
+|---------------|------------------|
+| userName      | email           |
+| firstName     | firstName       |
+| lastName      | lastName        |
+| email         | email           |
+
+### Testing
+
+1. Assign the Tribble application to a test user in Okta
+2. Verify the user is created in Tribble
+3. Update the user's profile in Okta
+4. Verify changes are reflected in Tribble
+5. Deactivate the test user in Okta
+6. Verify access is revoked in Tribble
+
+<Note>
+Changes in Okta may take a few minutes to reflect in Tribble.
+</Note>
+
+## Troubleshooting
+
+### Common Issues
+
+#### User Not Provisioned
+- Verify SCIM endpoint URL
+- Check API token validity
+- Confirm attribute mappings
+
+#### Sync Delays
+- Allow up to 15 minutes for changes to propagate
+- Check Okta system logs for errors
+
+#### Authentication Errors
+- Regenerate and update SCIM API token
+- Verify endpoint URL format
+
+## Best Practices
+
+- Regularly monitor SCIM logs
+- Test with a small user group first
+- Document your configuration
+- Keep API tokens secure
+- Set up alerts for sync failures 
