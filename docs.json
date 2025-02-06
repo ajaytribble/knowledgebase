@@ -11,13 +11,47 @@
   "navigation": {
     "anchors": [
       {
-        "anchor": "Getting Started",
+        "anchor": "Quick Start",
         "icon": "rocket",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
-              "getting-started"
+              "quick-start/getting-started",
+              "quick-start/core-concepts",
+              "quick-start/first-login"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "Tribble Platform",
+        "icon": "browser",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["tribble-platform/overview"]
+          },
+          {
+            "group": "Web App",
+            "pages": [
+              "tribble-platform/web-app/overview",
+              "tribble-platform/web-app/projects"
+            ]
+          },
+          {
+            "group": "Browser Extension",
+            "pages": [
+              "tribble-platform/browser-extension/overview",
+              "tribble-platform/browser-extension/project-creation",
+              "tribble-platform/browser-extension/question-management"
+            ]
+          },
+          {
+            "group": "Chat",
+            "pages": [
+              "tribble-platform/chat/overview",
+              "tribble-platform/chat/commands"
             ]
           }
         ]
@@ -27,62 +61,65 @@
         "icon": "shield-check",
         "groups": [
           {
-            "group": "Admin",
+            "group": "Administration",
             "pages": [
               "admin/overview",
-              "admin/integrations",
-              "admin/source-management",
-              "admin/uploading-files",
-              "admin/permission-settings",
-              "admin/scim-okta"
+              "admin/initial-setup",
+              "admin/user-management",
+              "admin/content-management",
+              "admin/settings"
             ]
           }
         ]
       },
       {
-        "anchor": "Integrations",
+        "anchor": "Integration Hub",
         "icon": "plug",
         "groups": [
           {
-            "group": "Integrations",
+            "group": "Overview",
+            "pages": ["integration-hub/overview"]
+          },
+          {
+            "group": "Content Sources",
             "pages": [
-              "integrations/overview",
-              "integrations/box",
-              "integrations/confluence",
-              "integrations/google-drive",
-              "integrations/highspot",
-              "integrations/notion",
-              "integrations/salesforce",
-              "integrations/sharepoint",
-              "integrations/slack",
-              "integrations/zendesk"
+              "integration-hub/content-sources/confluence",
+              "integration-hub/content-sources/sharepoint",
+              "integration-hub/content-sources/google-drive",
+              "integration-hub/content-sources/slack",
+              "integration-hub/content-sources/notion"
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              "integration-hub/authentication/sso",
+              "integration-hub/authentication/scim"
             ]
           }
         ]
       },
       {
-        "anchor": "Web App",
-        "icon": "browser",
+        "anchor": "Workflows",
+        "icon": "flow-chart",
         "groups": [
           {
-            "group": "Web App",
+            "group": "RFx",
             "pages": [
-              "web-app/creating-projects"
+              "workflows/rfx/overview",
+              "workflows/rfx/spreadsheet",
+              "workflows/rfx/longform",
+              "workflows/rfx/portal"
             ]
-          }
-        ]
-      },
-      {
-        "anchor": "Browser Extension",
-        "icon": "puzzle-piece",
-        "groups": [
+          },
           {
-            "group": "Browser Extension",
+            "group": "Go-to-Market",
             "pages": [
-              "browser-extension/getting-started",
-              "browser-extension/main-interface",
-              "browser-extension/project-creation",
-              "browser-extension/question-management"
+              "workflows/sales-enablement",
+              "workflows/onboarding",
+              "workflows/research",
+              "workflows/customer-success",
+              "workflows/account-planning"
             ]
           }
         ]

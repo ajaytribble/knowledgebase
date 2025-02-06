@@ -1,0 +1,132 @@
+---
+title: 'Spreadsheet-Based RFx'
+description: 'Guide for handling Excel and CSV based questionnaires in Tribble'
+---
+
+## Overview
+
+Spreadsheet-based RFx documents are common for security questionnaires, vendor assessments, and technical specifications. This guide explains how to efficiently process these documents using Tribble.
+
+## Supported Formats
+
+- Microsoft Excel (.xlsx, .xls)
+- CSV files (.csv)
+- Google Sheets (export to Excel/CSV first)
+
+## Step-by-Step Process
+
+### 1. Project Creation
+
+1. Open Tribble's web application
+2. Click "New Project"
+3. Select "RFx Response" as the project type
+4. Name your project and set the deadline
+
+### 2. Document Import
+
+1. Click "Import Document"
+2. Select your spreadsheet file
+3. Choose "Spreadsheet" as the document type
+4. Configure column mappings:
+   - Question column
+   - Response column
+   - Category/Section column (if applicable)
+   - Notes/Comments column (if applicable)
+
+### 3. Bulk Processing
+
+1. **Review Questions**
+   - Tribble automatically identifies questions
+   - Verify question parsing accuracy
+   - Adjust column mappings if needed
+
+2. **Generate Responses**
+   - Click "Generate Responses" for bulk processing
+   - Tribble analyzes your knowledge base
+   - Suggests relevant responses for each question
+
+3. **Response Review**
+   - Review suggested responses
+   - Accept, modify, or reject suggestions
+   - Add internal notes as needed
+
+### 4. Response Customization
+
+1. **Edit Responses**
+   - Click any response to edit
+   - Use the rich text editor for formatting
+   - Add supporting evidence or references
+
+2. **Batch Operations**
+   - Filter questions by status or category
+   - Bulk approve suitable responses
+   - Flag questions needing expert review
+
+### 5. Export and Submission
+
+1. **Export Options**
+   - Export to original format
+   - Generate response matrix
+   - Create audit trail document
+
+2. **Final Review**
+   - Check formatting consistency
+   - Verify all questions are answered
+   - Review character/word limits
+
+## Advanced Features
+
+### Response Library
+- Save frequently used responses
+- Create response templates
+- Tag responses for easy retrieval
+
+### Collaboration Tools
+- Assign questions to team members
+- Track response progress
+- Add internal comments
+
+### Version Control
+- Track response changes
+- Compare versions
+- Restore previous responses
+
+## Best Practices
+
+1. **Pre-processing**
+   - Clean up spreadsheet formatting
+   - Remove unnecessary columns
+   - Standardize question format
+
+2. **Quality Control**
+   - Set up review workflows
+   - Use internal validators
+   - Document decision rationale
+
+3. **Knowledge Management**
+   - Update knowledge base with new responses
+   - Tag unique or important responses
+   - Document customer-specific requirements
+
+<Note>
+For large spreadsheets (500+ questions), consider breaking the document into sections and processing them in batches for better management.
+</Note>
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Import Problems**
+   - Verify file format compatibility
+   - Check for corrupt files
+   - Simplify complex formatting
+
+2. **Response Generation**
+   - Update knowledge base
+   - Refine question parsing
+   - Check for similar questions
+
+3. **Export Issues**
+   - Verify formatting requirements
+   - Check character limits
+   - Test in target system 
