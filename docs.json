@@ -15,11 +15,12 @@
         "icon": "rocket",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Welcome",
             "pages": [
+              "quick-start/overview",
+              "quick-start/first-login",
               "quick-start/getting-started",
-              "quick-start/core-concepts",
-              "quick-start/first-login"
+              "quick-start/component-showcase"
             ]
           }
         ]
@@ -35,15 +36,15 @@
           {
             "group": "Web App",
             "pages": [
-              "tribble-platform/web-app/overview",
+              "tribble-platform/web-app/dashboard",
               "tribble-platform/web-app/projects"
             ]
           },
           {
             "group": "Browser Extension",
             "pages": [
-              "tribble-platform/browser-extension/overview",
-              "tribble-platform/browser-extension/project-creation",
+              "tribble-platform/browser-extension/getting-started",
+              "tribble-platform/browser-extension/portal-response",
               "tribble-platform/browser-extension/question-management"
             ]
           },

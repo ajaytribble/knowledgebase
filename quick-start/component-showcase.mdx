@@ -1,0 +1,294 @@
+---
+title: 'Component Showcase'
+description: 'Visual guide to all available Mintlify components'
+---
+
+## Text Formatting
+
+Regular text with **bold**, _italic_, and `code` formatting.
+
+## Headers
+
+# H1 Header
+## H2 Header
+### H3 Header
+#### H4 Header
+
+## Callouts
+
+<Note>
+This is a standard note callout
+</Note>
+
+<Info>
+This is an info callout
+</Info>
+
+<Warning>
+This is a warning callout
+</Warning>
+
+<Tip>
+This is a tip callout
+</Tip>
+
+## Cards and Grids
+
+### Basic Card
+<Card title="Single Card Example">
+  This is a basic card with a title and content
+</Card>
+
+### Card Grid
+<CardGroup cols={2}>
+  <Card title="First Card" icon="square-1">
+    Content for the first card
+  </Card>
+  <Card title="Second Card" icon="square-2">
+    Content for the second card
+  </Card>
+  <Card title="Third Card" icon="square-3">
+    Content for the third card
+  </Card>
+  <Card title="Fourth Card" icon="square-4">
+    Content for the fourth card
+  </Card>
+</CardGroup>
+
+## Accordions
+
+<AccordionGroup>
+  <Accordion title="First Accordion">
+    Content inside the first accordion
+  </Accordion>
+  <Accordion title="Second Accordion">
+    Content inside the second accordion
+  </Accordion>
+</AccordionGroup>
+
+## Tabs
+
+<Tabs>
+  <Tab title="First Tab">
+    Content for the first tab
+  </Tab>
+  <Tab title="Second Tab">
+    Content for the second tab
+  </Tab>
+  <Tab title="Third Tab">
+    Content for the third tab
+  </Tab>
+</Tabs>
+
+## Code Blocks
+
+```javascript
+// Simple code block
+function hello() {
+  console.log('Hello, world!');
+}
+```
+
+```javascript filename="example.js"
+// Code block with filename
+const data = {
+  title: 'Example',
+  value: 42
+};
+```
+
+## Steps
+
+<Steps>
+  <Step title="First Step">
+    Content for step one
+  </Step>
+  <Step title="Second Step">
+    Content for step two
+  </Step>
+  <Step title="Third Step">
+    Content for step three
+  </Step>
+</Steps>
+
+## Images
+
+### Basic Image
+<img src="/images/sampletest.jpg" alt="Sample test image" />
+
+### Framed Image
+<Frame>
+  <img src="/images/sampletest.jpg" alt="Sample test image in frame" />
+</Frame>
+
+## Tables
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | Data     | Data     |
+| Row 2    | Data     | Data     |
+
+## API Components
+
+### Request Example
+<CodeGroup>
+  ```bash Request
+  curl -X POST https://api.example.com/data \
+    -H "Authorization: Bearer token" \
+    -d '{"key": "value"}'
+  ```
+
+  ```json Response
+  {
+    "status": "success",
+    "data": {
+      "key": "value"
+    }
+  }
+  ```
+</CodeGroup>
+
+### Parameter Table
+<ParamField query="param" type="string" required>
+  Description of the parameter
+</ParamField>
+
+## Navigation Elements
+
+### Mini Navigation Card
+<Card title="Jump to Section" icon="arrow-right">
+  <a href="#section">Go to section</a>
+</Card>
+
+## Lists
+
+### Unordered List
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+
+### Ordered List
+1. First step
+2. Second step
+   1. Sub-step one
+   2. Sub-step two
+3. Third step
+
+## Tooltips and Hints
+
+Regular text with a <Tooltip tip="This is a tooltip">hover effect</Tooltip>.
+
+## Custom Styling
+
+### Basic Container Styling
+<div style={{ padding: '1rem', backgroundColor: '#f5f5f5', borderRadius: '8px', marginBottom: '1rem' }}>
+  Container with padding, background color, and rounded corners
+</div>
+
+### Text Styling
+<div style={{ 
+  color: '#3263E9', 
+  fontSize: '1.2rem', 
+  fontWeight: 'bold',
+  marginBottom: '1rem'
+}}>
+  Custom colored, sized, and weighted text
+</div>
+
+### Border and Shadow
+<div style={{ 
+  border: '2px solid #3263E9', 
+  boxShadow: '0 4px 6px rgba(50, 99, 233, 0.1)',
+  padding: '1rem',
+  marginBottom: '1rem'
+}}>
+  Container with border and shadow
+</div>
+
+### Flex Layout
+<div style={{ 
+  display: 'flex', 
+  gap: '1rem', 
+  justifyContent: 'space-between',
+  marginBottom: '1rem'
+}}>
+  <div style={{ backgroundColor: '#f5f5f5', padding: '1rem' }}>Flex item 1</div>
+  <div style={{ backgroundColor: '#f5f5f5', padding: '1rem' }}>Flex item 2</div>
+  <div style={{ backgroundColor: '#f5f5f5', padding: '1rem' }}>Flex item 3</div>
+</div>
+
+### Grid Layout
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(3, 1fr)', 
+  gap: '1rem',
+  marginBottom: '1rem'
+}}>
+  <div style={{ backgroundColor: '#f5f5f5', padding: '1rem' }}>Grid item 1</div>
+  <div style={{ backgroundColor: '#f5f5f5', padding: '1rem' }}>Grid item 2</div>
+  <div style={{ backgroundColor: '#f5f5f5', padding: '1rem' }}>Grid item 3</div>
+</div>
+
+### Hover Effects
+<div style={{ 
+  padding: '1rem', 
+  backgroundColor: '#f5f5f5', 
+  transition: 'all 0.2s ease',
+  cursor: 'pointer',
+  marginBottom: '1rem'
+}} 
+  onMouseEnter={(e) => e.target.style.backgroundColor = '#e5e5e5'} 
+  onMouseLeave={(e) => e.target.style.backgroundColor = '#f5f5f5'}
+>
+  Hover over this container
+</div>
+
+### Common Style Properties
+```css
+/* These can be used in the style prop */
+style={{
+  /* Layout */
+  display: 'flex' | 'grid' | 'block' | 'inline-block',
+  position: 'relative' | 'absolute' | 'fixed',
+  margin: '1rem' | '16px' | '1em',
+  padding: '1rem',
+  width: '100%' | '200px' | 'auto',
+  height: '100%' | '200px' | 'auto',
+
+  /* Typography */
+  fontSize: '16px' | '1rem' | '1.2em',
+  fontWeight: 'normal' | 'bold' | '600',
+  lineHeight: '1.5' | '24px',
+  textAlign: 'left' | 'center' | 'right',
+  color: '#000000' | 'rgb(0, 0, 0)' | 'rgba(0, 0, 0, 0.5)',
+
+  /* Colors & Backgrounds */
+  backgroundColor: '#ffffff',
+  opacity: '1' | '0.5',
+  
+  /* Borders & Shadows */
+  border: '1px solid black',
+  borderRadius: '8px',
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+
+  /* Transitions & Animations */
+  transition: 'all 0.2s ease',
+  transform: 'scale(1.1)' | 'rotate(45deg)',
+
+  /* Flexbox */
+  justifyContent: 'center' | 'space-between',
+  alignItems: 'center' | 'flex-start',
+  flexDirection: 'row' | 'column',
+  gap: '1rem',
+
+  /* Grid */
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridGap: '1rem',
+  
+  /* Responsive */
+  maxWidth: '800px',
+  minHeight: '200px'
+}}
+```

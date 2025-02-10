@@ -1,67 +1,122 @@
 ---
-title: 'Question Management'
-description: 'Learn how to manage questions effectively in the Tribble browser extension'
+title: 'Managing Portal Questions'
+description: 'Learn how to organize and manage questions from vendor portals in Tribble'
 ---
 
-This guide covers how to manage questions within the Tribble browser extension, including using select mode, assigning questions, tracking progress, and filtering your view.
+## Question Organization
 
-## Select Mode
+### Capturing Questions
+- Select text directly from portal
+- Use keyboard shortcuts for efficiency
+- Capture single or multiple questions
+- Maintain question context
 
-1. **Toggle Select Mode**  
-   * Turn select mode on to perform management actions on questions
-   * Find the select mode toggle in the top right corner of the question list
-   * Select mode will stay on until turned off
+<Frame caption="Question Capture">
+  <img src="/images/browser-extension/question-capture.png" alt="Capturing Questions from Portal" />
+</Frame>
 
-2. **Using Select Mode**  
-   * When active, checkboxes appear next to each question
-   * Select multiple questions for bulk actions
+### Question Categories
+Organize portal questions by:
+- Section/Category
+- Priority
+- Status
+- Assigned SME
 
-<Tip>
-Enable select mode when you need to perform actions on multiple questions, but remember to turn it off when done to avoid accidental selections.
-</Tip>
+## Response Management
 
-## Managing Questions
+### Generated Responses
+<Steps>
+  <Step title="Review">
+    Check response accuracy and relevance
+  </Step>
+  <Step title="Edit">
+    Customize for specific context
+  </Step>
+  <Step title="Format">
+    Match portal requirements
+  </Step>
+  <Step title="Submit">
+    Copy response back to portal
+  </Step>
+</Steps>
 
-### Assigning Questions
-* With select mode on, choose questions to assign to team members
-* Click the "Assign" button and select team members
-* Assignees will be notified in Slack
+### Response Options
+<AccordionGroup>
+  <Accordion title="Answer Length">
+    - Default (~100 words)
+    - Shorter (~50 words)
+    - Longer (~150 words)
+  </Accordion>
+  <Accordion title="Response Style">
+    - Technical detail level
+    - Formal vs. conversational
+    - Include/exclude examples
+  </Accordion>
+</AccordionGroup>
 
-### Tracking Review Progress
-* View the status of reviewed questions in the top right corner
-* Progress tracker updates automatically as questions are marked as reviewed
-* Monitor completion status at a glance
+## Progress Tracking
 
-## Filtering and Viewing Questions
+### Status Indicators
+- Not Started
+- In Progress
+- Ready for Review
+- Completed
+- Needs Attention
 
-Customize your view using the filter screen:
+<Frame caption="Progress Dashboard">
+  <img src="/images/browser-extension/progress-tracking.png" alt="Question Progress Tracking" />
+</Frame>
 
-### Available Filters
-* Filter by confidence levels
-* Filter by groupings
-* Filter by assigned individual
+### Batch Operations
+- Mark multiple questions complete
+- Assign questions to team members
+- Apply tags to groups
+- Export status reports
 
-<Note>
-Use filters to focus on specific subsets of questions, especially helpful in large projects with many questions.
-</Note>
+## Collaboration Features
+
+### Team Coordination
+<CardGroup cols={2}>
+  <Card title="Comments" icon="comments">
+    Add notes and feedback on responses
+  </Card>
+  <Card title="Assignments" icon="user-group">
+    Delegate questions to team members
+  </Card>
+  <Card title="Reviews" icon="check-double">
+    Request and track response reviews
+  </Card>
+  <Card title="History" icon="clock-rotate-left">
+    Track changes and versions
+  </Card>
+</CardGroup>
 
 ## Best Practices
 
-### Efficient Management
-* Use select mode for bulk actions
-* Regularly check review progress
-* Utilize filters for focused work
+### Organization Tips
+<Check>Group related questions together</Check>
+<Check>Use consistent naming conventions</Check>
+<Check>Apply relevant tags</Check>
+<Check>Track dependencies between questions</Check>
 
-### Team Coordination
-* Assign questions strategically based on expertise
-* Monitor team progress through the review tracker
-* Use groupings to organize questions by department or function
+### Quality Control
+<Warning>
+Before marking complete:
+- Verify response accuracy
+- Check character limits
+- Confirm formatting
+- Review attachments if needed
+</Warning>
 
-### Progress Tracking
-* Keep the review status updated
-* Use filters to identify unassigned questions
-* Monitor confidence levels for quality assurance
+## Keyboard Shortcuts
 
-<Tip>
-For large projects, consider breaking down questions into smaller, manageable groups using the filtering system.
-</Tip> 
+| Action | Shortcut |
+|--------|----------|
+| Tag Question | Ctrl/Cmd + T |
+| Add Comment | Ctrl/Cmd + M |
+| Mark Complete | Ctrl/Cmd + D |
+| Request Review | Ctrl/Cmd + R |
+
+<Note>
+Remember to save your progress regularly while managing questions and responses.
+</Note> 

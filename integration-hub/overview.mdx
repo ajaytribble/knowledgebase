@@ -1,52 +1,121 @@
 ---
-title: 'Integration Hub Overview'
+title: 'Integration Hub'
 description: 'Connect your content sources and systems with Tribble'
 ---
 
-## Available Integrations
-
-<CardGroup cols={3}>
-  <Card title="Content Management" icon="folder-tree">
-    Connect to your document management systems
-  </Card>
-  <Card title="Communication" icon="comments">
-    Integrate with chat and collaboration tools
-  </Card>
-  <Card title="Authentication" icon="shield-check">
-    Set up SSO and user management
-  </Card>
-</CardGroup>
-
 ## Content Sources
 
-### Document Management
-- SharePoint
-- Google Drive
-- Box
-- Confluence
-- Notion
+<CardGroup cols={4}>
+  <Card
+    title="SharePoint"
+    href="/integration-hub/content-sources/sharepoint"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/sharepointlogo.svg" alt="SharePoint" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+  
+  <Card
+    title="Google Drive"
+    href="/integration-hub/content-sources/google-drive"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/googledrivelogo.svg" alt="Google Drive" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+  
+  <Card
+    title="Box"
+    href="/integration-hub/content-sources/box"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/boxlogo.svg" alt="Box" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+  
+  <Card
+    title="Confluence"
+    href="/integration-hub/content-sources/confluence"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/confluencelogo.svg" alt="Confluence" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+  
+  <Card
+    title="Notion"
+    href="/integration-hub/content-sources/notion"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/notionlogo.svg" alt="Notion" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+  
+  <Card
+    title="Highspot"
+    href="/integration-hub/content-sources/highspot"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/Highspotlogo.svg" alt="Highspot" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
 
-### Communication Platforms
-- Slack
-- Microsoft Teams
-- Email
+  <Card
+    title="Slack"
+    href="/integration-hub/content-sources/slack"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/slacklogo.svg" alt="Slack" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+</CardGroup>
 
-### Sales Tools
-- Salesforce
-- Highspot
-- Seismic
+## Chat with Tribble
+
+<CardGroup cols={4}>
+  <Card
+    title="Slack"
+    href="/integration-hub/chat/slack"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/slacklogo.svg" alt="Slack" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+  
+  <Card
+    title="Microsoft Teams"
+    href="/integration-hub/chat/teams"
+    icon={
+      <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/images/integrations/microsoftteamslogo.svg" alt="Microsoft Teams" style={{ width: '28px', height: '28px' }} />
+      </div>
+    }
+  />
+</CardGroup>
 
 ## Authentication & Security
 
-### Single Sign-On (SSO)
-- SAML 2.0 support
-- OAuth 2.0
-- Custom JWT
-
-### User Provisioning
-- SCIM integration
-- Automated user sync
-- Role mapping
+<CardGroup cols={4}>
+  <Card
+    title="SSO"
+    href="/integration-hub/authentication/sso"
+    icon="key"
+  />
+  
+  <Card
+    title="SCIM"
+    href="/integration-hub/authentication/scim"
+    icon="users"
+  />
+</CardGroup>
 
 ## Best Practices
 
@@ -61,11 +130,6 @@ description: 'Connect your content sources and systems with Tribble'
 - Data privacy
 - Compliance requirements
 
-### Content Management
-- Organize source hierarchy
-- Set up proper permissions
-- Regular content updates
-
 <Note>
-For detailed setup instructions, refer to individual integration guides in the sidebar.
+For detailed setup instructions, refer to individual integration guides by clicking on the integration cards above.
 </Note> 
