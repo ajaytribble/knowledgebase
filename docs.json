@@ -41,18 +41,18 @@
             ]
           },
           {
+            "group": "Chat",
+            "pages": [
+              "tribble-platform/chat/overview",
+              "tribble-platform/chat/commands"
+            ]
+          },
+          {
             "group": "Browser Extension",
             "pages": [
               "tribble-platform/browser-extension/getting-started",
               "tribble-platform/browser-extension/portal-response",
               "tribble-platform/browser-extension/question-management"
-            ]
-          },
-          {
-            "group": "Chat",
-            "pages": [
-              "tribble-platform/chat/overview",
-              "tribble-platform/chat/commands"
             ]
           }
         ]
