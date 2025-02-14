@@ -36,23 +36,41 @@
           {
             "group": "Web App",
             "pages": [
-              "tribble-platform/web-app/dashboard",
-              "tribble-platform/web-app/projects"
+              {
+                "group": "Answer RFx",
+                "pages": [
+                  "tribble-platform/web-app/spreadsheet",
+                  "tribble-platform/web-app/longform"
+                ]
+              }
             ]
           },
           {
             "group": "Chat",
             "pages": [
               "tribble-platform/chat/overview",
-              "tribble-platform/chat/commands"
+              "tribble-platform/chat/salesforce-integration",
+              "tribble-platform/chat/tags-in-chat"
+            ]
+          },
+          {
+            "group": "Tribblytics",
+            "pages": [
+              "tribble-platform/tribblytics/overview"
             ]
           },
           {
             "group": "Browser Extension",
             "pages": [
-              "tribble-platform/browser-extension/getting-started",
-              "tribble-platform/browser-extension/portal-response",
-              "tribble-platform/browser-extension/question-management"
+              "tribble-platform/browser-extension/overview",
+              "tribble-platform/browser-extension/install",
+              {
+                "group": "Workflows",
+                "pages": [
+                  "tribble-platform/browser-extension/portal-workflow",
+                  "tribble-platform/browser-extension/question-management"
+                ]
+              }
             ]
           }
         ]
@@ -67,6 +85,8 @@
               "admin/overview",
               "admin/initial-setup",
               "admin/user-management",
+              "admin/tags",
+              "admin/go-no-go",
               "admin/content-management",
               "admin/settings"
             ]

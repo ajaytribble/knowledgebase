@@ -3,154 +3,236 @@ title: 'Creating Projects'
 description: 'Learn how to create and manage projects in Tribble'
 ---
 
-## Project Creation Methods
+Navigate to the Projects tab in the [web app](https://my.tribble.ai) to begin creating your project.
 
-<Frame caption="Projects Dashboard">
-  <img src="/images/web-app/creating%20projects/projects-dashboard.png" alt="Projects Dashboard View" />
-</Frame>
+## Select Your Document Type
 
-<CardGroup cols={2}>
-  <Card title="Upload Document" icon="file-arrow-up">
-    Upload questionnaires in supported formats (DOCX, PDF, XLSX)
-  </Card>
-  <Card title="Manual Entry" icon="keyboard">
-    Manually input questions or copy-paste from various sources
-  </Card>
-</CardGroup>
+<Tabs>
+  <Tab title="Spreadsheet Documents">
+    ### Project Creation
+    
+    <Frame caption="Projects Dashboard">
+      <img src="/images/web-app/creating%20projects/projects-dashboard.png" alt="Projects Dashboard View" />
+    </Frame>
 
-## Creating a New Project
+    Upload your questionnaire in XLSX (Excel spreadsheet) format.
 
-<Frame caption="Create New Project">
-  <img src="/images/web-app/creating%20projects/new-project-form.png" alt="New Project Form" />
-</Frame>
+    <Steps>
+      <Step title="Start Project Creation">
+        Click the "Create Project" button and select "Upload Questionnaire"
+      </Step>
+      <Step title="Upload Document">
+        Upload your Excel spreadsheet
+      </Step>
+      <Step title="Enter Project Details">
+        Fill in the required information:
+        - Project title
+        - Customer name
+        - Due date
+        - Project owner
+        
+        Optional:
+        - Link to Salesforce opportunity
+      </Step>
+      <Step title="Configure Settings">
+        1. Select answer length
+        
+        2. Optionally apply tags to focus responses on specific:
+           - Product lines
+           - Geographic regions
+           - Industry verticals
+           - Compliance frameworks
+        
+        <Info>
+          [Click here](/admin/tags) if you're an admin and want to learn more about tags
+        </Info>
+      </Step>
+    </Steps>
 
-### Option 1: Upload a Document
+    ### Document Processing
+    <Steps>
+      <Step title="Initial Analysis">
+        Tribble analyzes your spreadsheet to identify question and answer columns/cells
+      </Step>
+      <Step title="Review & Verify">
+        Review Tribble's analysis:
+        - Verify identified question columns and cells
+        - Confirm answer column locations
+        - Add or remove question/answer ranges as needed
+      </Step>
+      <Step title="Confirm & Generate">
+        Once you're satisfied with the document setup:
+        - Click Continue to proceed
+        - Tribble will generate responses for all questions using your knowledge base
+      </Step>
+    </Steps>
 
-<Steps>
-  <Step title="Start New Project">
-    Click the "Create Project" button and select "Upload Questionnaire"
-  </Step>
-  <Step title="Choose File">
-    Upload your document in DOCX, PDF, or XLSX format
-  </Step>
-  <Step title="Enter Project Details">
-    - Project title
-    - Customer name
-    - Due date
-    - Project owner
-  </Step>
-  <Step title="Configure Settings">
-    - Select relevant tags (product, region, etc.)
-    - Set answer length preferences
-    - Enable/disable "Terse yes or no answers" option
-  </Step>
-</Steps>
+    <Frame caption="Spreadsheet Review Interface">
+      <img src="/images/web-app/creating%20projects/spreadsheet-review.png" alt="Spreadsheet Column Review and Verification" />
+    </Frame>
 
-<Frame caption="Project Creation Process">
-  <img src="/images/web-app/creating%20projects/project-filled.gif" alt="Project Creation Process" />
-</Frame>
+    ### Workflows
 
-### Option 2: Manual Question Entry
+    After Tribble generates initial answers, click the review cell next to any satisfactory answer to mark it as reviewed. For answers that need modification:
 
-<Steps>
-  <Step title="Create Project">
-    Click "Create Project" and select "Manual Entry"
-  </Step>
-  <Step title="Set Up Project">
-    Enter project details and configure settings
-  </Step>
-  <Step title="Add Questions">
-    Use "Add Questions" button to input or copy-paste questions
-  </Step>
-  <Step title="Organize Content">
-    Group questions by function (Legal, Security, Product, etc.)
-  </Step>
-</Steps>
+    #### Editing Answers
+    Two ways to edit answers:
 
-## Project Settings
+    1. **Direct Edit**
+       - Click the pencil icon on any question/answer pair
+       - Make your changes directly in the editor
+       - Changes are automatically marked as reviewed
 
-### Answer Length Options
-<AccordionGroup>
-  <Accordion title="Default (~100 words)">
-    Standard response length suitable for most questions
-  </Accordion>
-  <Accordion title="Shorter (~50 words)">
-    Concise responses for simple questions or requirements
-  </Accordion>
-  <Accordion title="Longer (~150 words)">
-    Detailed responses for complex questions or technical requirements
-  </Accordion>
-</AccordionGroup>
+    2. **Chat with Tribble**
+       - Choose from suggested actions or chat with Tribble
+       - Request longer answers, tone changes, or other modifications
+       - Replace the answer when satisfied
+       - Modified answers are automatically marked as reviewed
 
-### Project Tags
+    <Frame caption="Chat with Tribble">
+      <img src="/images/web-app/workflows/chat-interaction.gif" alt="Demonstrating chat and suggested actions with Tribble" />
+    </Frame>
+
+    #### Collaboration
+
+    <CardGroup cols={3}>
+      <Card title="Question Assignment" icon="user-plus">
+        Assign specific questions to team members for their expertise
+      </Card>
+      <Card title="Review Tracking" icon="chart-line">
+        Monitor review status and modification history
+      </Card>
+      <Card title="Expert Consultation" icon="slack">
+        Loop in experts via pre-configured Slack channels
+      </Card>
+    </CardGroup>
+    
+    <Info>
+      Looping in experts via Slack requires admin setup. [Learn more about Slack content integration](/integration-hub/content-sources/slack)
+    </Info>
+
+    <Frame caption="Slack Integration">
+      <img src="/images/web-app/workflows/slack-expert.png" alt="Expert reviewing and modifying answer in Slack" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Long-form Documents">
+    ### Project Creation
+    
+    <Frame caption="Projects Dashboard">
+      <img src="/images/web-app/creating%20projects/projects-dashboard.png" alt="Projects Dashboard View" />
+    </Frame>
+
+    Upload your RFx documents in DOCX (Microsoft Word) or PDF format. You can upload one or multiple documents for your proposal.
+
+    <Steps>
+      <Step title="Start Project Creation">
+        Click the "Create Project" button and select "Upload Questionnaire"
+      </Step>
+      <Step title="Upload Documents">
+        Upload one or more documents in DOCX or PDF format
+      </Step>
+      <Step title="Enter Project Details">
+        Fill in the required information:
+        - Project title
+        - Customer name
+        - Due date
+        - Project owner
+        
+        Optional:
+        - Link to Salesforce opportunity
+      </Step>
+      <Step title="Configure Settings">
+        Optionally apply tags to focus responses on specific:
+        - Product lines
+        - Geographic regions
+        - Industry verticals
+        - Compliance frameworks
+        
+        <Info>
+          [Click here](/admin/tags) if you're an admin and want to learn more about tags
+        </Info>
+      </Step>
+    </Steps>
+
+    ### Document Processing
+    <Steps>
+      <Step title="Document Analysis">
+        Tribble analyzes your RFx documents and their content
+      </Step>
+      <Step title="Review & Customize">
+        - Review the generated proposal outline
+        - Modify section headers and descriptions
+        - Add or remove sections as needed
+        - Ask questions about the RFx content
+        - Review any triggered go/no-go criteria warnings
+        
+        <Info>
+          [Learn more about configuring go/no-go criteria](/admin/go-no-go)
+        </Info>
+      </Step>
+      <Step title="Finalize Structure">
+        Once you're satisfied with the proposal structure:
+        - Click Continue to proceed
+        - Tribble will generate content for each section
+      </Step>
+    </Steps>
+
+    <Frame caption="Proposal Structure Review">
+      <img src="/images/web-app/creating%20projects/proposal-review.png" alt="Proposal Structure Review and Customization" />
+    </Frame>
+
+    ### Workflows
+
+    #### Editing Answers
+    <Steps>
+      <Step title="Section Navigation">
+        - Navigate through proposal sections
+        - Use the outline view for quick access
+        - Edit section content directly
+      </Step>
+      <Step title="Content Editing">
+        - Use rich text editor for formatting
+        - Insert images and tables
+        - Apply document styles
+      </Step>
+      <Step title="Version Control">
+        - Track changes by section
+        - View edit history
+        - Restore previous versions
+      </Step>
+    </Steps>
+
+    #### Verifying Answers
+    <Steps>
+      <Step title="Section Review">
+        - Mark sections for review
+        - Track review status
+        - Add review comments
+      </Step>
+      <Step title="Compliance Check">
+        - Verify requirements coverage
+        - Check against RFx criteria
+        - Ensure consistent messaging
+      </Step>
+    </Steps>
+
+    #### Collaboration
+    <Steps>
+      <Step title="Team Coordination">
+        - Assign section owners
+        - Set review deadlines
+        - Track section progress
+      </Step>
+      <Step title="Review Process">
+        - Conduct collaborative reviews
+        - Manage approval workflows
+        - Consolidate feedback
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
 <Note>
-Tags help confine Tribble's responses to relevant content. Use them to specify:
-- Product lines
-- Geographic regions
-- Industry verticals
-- Compliance frameworks
-</Note>
-
-## Document Processing
-
-After project creation, Tribble processes your content:
-
-### For Spreadsheets
-<Check>Extracts all questions</Check>
-<Check>Identifies question types</Check>
-<Check>Generates appropriate responses</Check>
-<Check>Maps to relevant knowledge base content</Check>
-
-### For Long-form Documents
-<Check>Analyzes document structure</Check>
-<Check>Evaluates against "Go/No-Go" criteria</Check>
-<Check>Provides feedback based on criteria</Check>
-<Check>Generates proposal responses</Check>
-
-## Best Practices
-
-### Project Setup
-<Tip>
-- Use clear, descriptive project names
-- Set realistic deadlines
-- Assign appropriate owners
-- Apply relevant tags
-</Tip>
-
-### Document Preparation
-<Warning>
-Before uploading documents:
-- Clean up formatting
-- Remove unnecessary content
-- Verify question structure
-- Check for completeness
-</Warning>
-
-## Project Organization
-
-### Grouping Questions
-- Organize by function
-- Create logical sections
-- Use consistent naming
-- Apply relevant tags
-
-### Team Collaboration
-- Assign section owners
-- Set review workflows
-- Track progress
-- Maintain version control
-
-## Getting Help
-
-<CardGroup cols={2}>
-  <Card title="Documentation" icon="book">
-    Access detailed guides and best practices
-  </Card>
-  <Card title="Support Team" icon="headset">
-    Contact us at support@tribble.com
-  </Card>
-</CardGroup>
-
-<Note>
-Need help with a specific project type? Our support team is available to guide you through the process.
+Need assistance? Contact our support team at support@tribble.com for help with your specific project needs.
 </Note> 
